@@ -44,5 +44,8 @@ def subs_downloader(filename)
 
 end
 
-subs_downloader("Django.Unchained.2012.1080p.BluRay.x264.YIFY.mp4")
+path = ARGV[0]
+puts path
+
+# subs_downloader("Django.Unchained.2012.1080p.BluRay.x264.YIFY.mp4")
 
