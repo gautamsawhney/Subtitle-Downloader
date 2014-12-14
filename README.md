@@ -9,7 +9,6 @@ You can install Ruby using the following link : http://code.tutsplus.com/tutoria
 Ruby version 1.9.3 is supported.
 
 ### How to Use:
----------------
 
 * Clone the repository.
 
