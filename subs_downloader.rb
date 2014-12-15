@@ -27,15 +27,13 @@ def subs_downloader(filename)
 
 	  hash = get_hash(original_filename)	
 
+
 	  if (File.exist?(filename + ".srt") == false) 
 	    header = { 'User-Agent' => 'SubDB/1.0 (Subtitle-Downloader /1.0; https://github.com/gautamsawhney/Subtitle-Downloader)' }
-	  	
-	  	# url = "http://sandbox.thesubdb.com/?action=download&hash=" + hash + "&language=en"
-	  	# url = "http://api.thesubdb.com/?action=download&hash=" + hash + "&language=en"
-
-	  	http = Net::HTTP.new "http://api.thesubdb.com"
+      
+      http = Net::HTTP.new "api.thesubdb.com"
       res = http.send_request("GET", "/?action=download&hash=" + hash + "&language=en", nil, header)
-	  	# res = http.send_request('GET', url, header)
+      
       File.open(filename + ".srt", "wb" ) do |f| 
       	f.write(res.body)
       end	 
