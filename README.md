@@ -16,7 +16,7 @@ Ruby version 1.9.3 is supported.
 
 * Open subs_downloader.rb and copy the name of the movie file on line 52.
 
-* Open terminal go(cd..) into the folder where subs_downlaoder.rb file is present and use the 
+* Open terminal go(cd..) to the folder where subs_downlaoder.rb file is present and use the 
   command:  
 
   `ruby subs_downloader.rb`
