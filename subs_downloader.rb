@@ -45,11 +45,11 @@ def subs_downloader(filename)
 
 end
 
-# path = ARGV[0]
-# puts path
+path = ARGV[1]
+subs_downloader(path) 
 
 # Copy the name of the file within inverted commas below:
 
- subs_downloader("Movie name(full name without the path) goes here") 
+ # subs_downloader("The.Secret.Life.of.Walter.Mitty.2013.720p.BluRay.x264.YIFY.mp4") 
 
 
